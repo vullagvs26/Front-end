@@ -44,10 +44,10 @@ onMounted(() => {
       class="w-[50%] flex flex-col items-center border px-10 py-2 gap-1"
     >
       <strong>Add New Employee</strong>
-      <div class="flex gap-2 items-center w-full justify-between">
-        <p>Employee ID</p>
+        <div class="flex gap-2 items-center w-full justify-between">
+        <p>First Name</p>
         <input
-          v-model="employeeForm.employee_id"
+          v-model="employeeForm.first_name"
           required
           class="py-2 border border-black rounded"
         />
@@ -96,7 +96,7 @@ onMounted(() => {
       <input
       v-if="!employeeForm.id"
         @click="addNewEmployee"
-        type="Submit"
+        type="submit"
         class="py-2 bg-red-200 w-full hover:bg-red-400 cursor-pointer"
       />
     </form>
